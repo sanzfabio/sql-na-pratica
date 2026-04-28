@@ -155,7 +155,7 @@ Dominar o SELECT é dominar a fonte da verdade.
 ## 🔗 Conecte-se
 
 - **LinkedIn:** [@fabioSanz](https://www.linkedin.com/in/fabiosanz/)
-- **GitHub:** [/fabioSanz](https://github.com/fabioandradesanz)
+- **GitHub:** [/fabioSanz](https://github.com/sanzfabio)
 - **Série SQL na Prática:** [Todos os posts](#)
 
 ---
