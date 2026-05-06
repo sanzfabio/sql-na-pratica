@@ -67,5 +67,5 @@
 
 -- ==============================================================================
 -- Resposta em: solucao.sql
--- Material completo: github.com/[seu-usuario]/sql-na-pratica
+-- Material completo: github.com/sanzfabio/sql-na-pratica
 -- ==============================================================================
