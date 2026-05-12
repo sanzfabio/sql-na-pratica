@@ -21,3 +21,6 @@ para o menor valor.
 ## Dica
 Você vai precisar combinar o que aprendeu no Ep. 002
 (WHERE) com o ORDER BY do Ep. 003.
+
+## Dados
+- [BASE DE DADOS](base-de-dados/vendas.sql)
