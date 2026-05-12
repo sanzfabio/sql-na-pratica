@@ -12,9 +12,13 @@ Cada pasta representa um post/aula da série:
 - desafio
 - solução comentada
 
+## Base de Dados
+- [BASE DE DADOS](base-de-dados/vendas.sql)
+
 ## Série
 - [Post 001 — SELECT](./post001-select/README.md)
 - [Post 002 — WHERE](./post002-where/README.md)
+- [Post 003 — ORDER BY](./post003-order-by/README.md)
 
 
 ## Como usar
