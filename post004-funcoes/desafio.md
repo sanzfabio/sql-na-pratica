@@ -11,7 +11,7 @@ O objetivo deste episódio é acabar com o hábito ineficiente de exportar volum
 Para realizar este laboratório de forma 100% gratuita e sem precisar instalar nenhum banco de dados na sua máquina, siga os passos abaixo:
 
 1. **Acesse o validador online:** Abra o site [SQLiteOnline.com](https://sqliteonline.com/).
-2. **Crie a tabela e os dados de teste:** Copie todo o código contido no arquivo [vendas.sql]([../base-de-dados/vendas.sql), cole no editor do site e clique em **Run** (ou pressione `SHIFT + ENTER`).
+2. **Crie a tabela e os dados de teste:** Copie todo o código contido no arquivo [vendas.sql](../base-de-dados/vendas.sql), cole no editor do site e clique em **Run** (ou pressione `SHIFT + ENTER`).
 3.**Valide seu resultado:** Após rodar sua query, confira se o resultado bate com o esperado e compare com a [`solucao.sql`](./solucao.sql).
 
 ---
