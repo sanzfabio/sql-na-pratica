@@ -11,17 +11,17 @@ O objetivo deste episódio é acabar com o hábito ineficiente de exportar volum
 Para realizar este laboratório de forma 100% gratuita e sem precisar instalar nenhum banco de dados na sua máquina, siga os passos abaixo:
 
 1. **Acesse o validador online:** Abra o site [SQLiteOnline.com](https://sqliteonline.com/).
-2. **Crie a tabela e os dados de teste:** Copie todo o código contido no arquivo [vendas.sql](base-de-dados/vendas.sql), cole no editor do site e clique em **Run** (ou pressione `SHIFT + ENTER`).
+2. **Crie a tabela e os dados de teste:** Copie todo o código contido no arquivo [vendas.sql]([base-de-dados/vendas.sql](https://github.com/sanzfabio/sql-na-pratica/blob/main/base-de-dados/vendas.sql)), cole no editor do site e clique em **Run** (ou pressione `SHIFT + ENTER`).
 3.**Valide seu resultado:** Após rodar sua query, confira se o resultado bate com o esperado e compare com a [`solucao.sql`](./solucao.sql).
 
 ---
 
-## 💼 O Contexto de Negócio (FP&A / Finanças)
+## 💼 O Contexto de Negócio (FP&A / Comercial)
 
-A diretoria da empresa solicitou uma análise rápida de fechamento parcial sobre o fluxo de caixa. Eles precisam saber exatamente o volume financeiro que foi efetivamente liquidado e o número de transações bem-sucedidas em um período específico, eliminando ruídos de transações pendentes ou canceladas.
+A diretoria da empresa solicitou uma análise rápida sobre a performance comercial do primeiro trimestre. Eles precisam entender o comportamento do mercado e o ritmo de tração do negócio, monitorando os indicadores consolidados diretamente na fonte para planejar as metas dos próximos meses.
 
 ### Sua Missão:
-Construir uma query SQL que retorne o **total arrecadado** e a **quantidade de transações** ocorridas especificamente no mês de **junho de 2026**, filtrando apenas os recebimentos com o status igual a **'Pago'**.
+Construir uma query SQL que retorne o **faturamento total** (soma dos valores) e a **quantidade de vendas** realizadas especificamente no mês de **Fevereiro de 2026**, utilizando a nossa tabela padrão de `vendas`.
 
 ---
 
