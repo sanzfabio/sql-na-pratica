@@ -1,36 +1,21 @@
-# SQL na Prática #008 — Cláusula LEFT JOIN 🎯 
+# SQL na Prática #008 — LEFT JOIN Masterclass 🔍
 
-Seja bem-vindo ao repositório de códigos práticos do **Episódio #008**. Neste laboratório, vamos dominar a cláusula `LEFT JOIN`, entender como o banco de dados lida com a ausência de dados (`NULL`) e criar uma rotina de auditoria para identificar falhas operacionais.
-
----
-
-## 🗂️ Entendendo a Mecânica Oculta: A Mesa de Comando
-
-Se o `INNER JOIN` funciona como peças de Lego que só se unem se os pinos forem iguais, o `LEFT JOIN` estabelece uma **tabela soberana** (a tabela posicionada à esquerda do comando). Entenda o fluxo que ocorre na memória do banco:
-
-1. **`FROM` (A Tabela Soberana):** O banco lê a tabela da esquerda (ex: `produtos`). Todas as linhas dela entrarão no relatório final, sem exceção.
-2. **`LEFT JOIN` (A Busca por Pares):** O banco olha para a tabela da direita (ex: `vendas`) procurando correspondências pelo ID.
-3. **A Geração do `NULL`:** Para os produtos que venderam, os dados se unem normalmente. Para os produtos que **nunca** venderam, o banco não joga a linha fora; ele preenche as colunas da direita com o marcador `NULL` (vazio).
-4. **`WHERE ... IS NULL` (A Auditoria):** Ao aplicarmos um filtro testando se a coluna da tabela da direita é nula, isolamos cirurgicamente apenas os elementos que não possuem relacionamento.
+Bem-vindo ao repositório prático do **Episódio #008**. Neste laboratório, vamos focar em encontrar os dados invisíveis. Você vai aprender a usar o `LEFT JOIN` para auditorias de negócios, FP&A e Logística, capturando clientes inativos e produtos sem vendas.
 
 ---
 
-## 🚀 Como Executar o Desafio (Zero Instalação)
+## 🚀 Como Executar o Desafio (Sem Instalação)
 
-1. **Acesse a IDE Online:** Abra o site [SQLiteOnline.com](https://sqliteonline.com/).
-2. **Confirme a sua estrutura:** Certifique-se de que as tabelas de `produtos` e `vendas` estão povoadas. Caso necessário, utilize os scripts de carga da pasta raiz.
-3. **Abra o desafio:** Abra o arquivo [`desafio.sql`](./desafio.sql) e preencha as lacunas marcadas com `______` para capturar os produtos fantasmas do catálogo.
-4. **Valide com o Gabarito:** Verifique se sua lógica confere com o arquivo [`solucao.sql`](./solucao.sql).
-
----
-
-## 💼 O Contexto de Negócio (FP&A / Auditoria Operacional)
-
-Manter produtos em catálogo que não geram movimentação financeira gera custos de armazenamento e distorce as análises de inventário. O time de FP&A solicitou um relatório contendo exclusivamente os produtos que nunca geraram receita para que o setor de marketing aplique uma estratégia de queima de estoque ou descontinuação.
+1. **Acesse o editor online:** Abra o [SQLiteOnline.com](https://sqliteonline.com/).
+2. **Execute o Setup:** Abra o arquivo [`setup_dados.sql`](./setup_dados.sql) deste repositório, cole no editor e clique em **Run (F9)**. Isso criará as tabelas de `clientes`, `produtos` e `vendas` populadas com cenários reais.
+3. **Escreva sua Solução:** Tente resolver o desafio de logística proposto no arquivo [`desafio.sql`](./desafio.sql).
+4. **Valide:** Compare seu retorno com o gabarito oficial em [`solucao.sql`](./solucao.sql).
 
 ---
 
-## 💬 Participe!
-Encontrou os itens parados? Deixe sua query registrada nos comentários da publicação no LinkedIn!
+## 💼 O Caso de Negócio
 
-Se esta jornada prática está agregando valor à sua carreira, apoie o repositório deixando uma **⭐ Star**!
+* **Cenário 1 (Auditoria FP&A):** O CFO quer saber quais clientes foram cadastrados este ano, mas ainda não geraram receita.
+* **Cenário 2 (Logística/Estoque):** O Diretor de Logística precisa identificar quais produtos cadastrados em estoque possuem zero vendas históricas para evitar custos desnecessários de armazenagem.
+
+Dúvidas? Deixe sua resposta do desafio no post do LinkedIn! E não esqueça de deixar uma **⭐ Star** se esse projeto te ajudou!
