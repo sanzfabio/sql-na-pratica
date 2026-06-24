@@ -1,14 +1,14 @@
 -- ====================================================================
--- 📌 DESAFIO #008 — CLÁUSULA LEFT JOIN
--- Missão: Descobrir quais produtos do catálogo estão sem movimentação,
--- ou seja, nunca registraram nenhuma linha na tabela de vendas.
+-- SQL na Prática #008 - O Mini Desafio (Tabelas: produtos & vendas)
+-- ====================================================================
+-- Missão Logística: Escreva a query que retorne o nome de todos os
+-- produtos cadastrados que nunca registraram nenhuma venda.
+--
+-- Dica: Substitua a lacuna "_________" pelo campo ideal da tabela da DIREITA.
 -- ====================================================================
 
-SELECT 
-    p.id_produto,
-    p.nome_produto,
-    COALESCE(v.valor_total, ______) AS valor_venda  -- 1. Converta o valor nulo para 0 caso queira exibir na tela
+SELECT p.nome_produto
 FROM produtos p
-______ JOIN vendas v                                -- 2. Use a junção adequada para preservar todos os produtos
-    ON p.id_produto = v.______                      -- 3. Identifique a coluna de ligação entre as tabelas
-WHERE v.id_produto ______ ______;                    -- 4. Filtre apenas as linhas que NÃO encontraram correspondência
+ _________ JOIN vendas v
+  ON p. _________ = v. _________
+WHERE _________ IS NULL;
