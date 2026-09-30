@@ -46,13 +46,14 @@ ORDER BY valor_total DESC;
 
 ---
 
-## 🛠️ Como Executar na Sua Máquina
+## 🛠️ Como Executar na Sua Máquina ou online
 
 1. **Setup da Base de Dados**: Certifique-se de carregar os scripts da pasta raiz do projeto [/base-de-dados/datasets](../../base-de-dados/datasets), especialmente o arquivo:
   * `04_vendas.sql`
 2. **Testando o Desafio**: Execute o arquivo `desafio.sql` no seu SGBD de preferência (MySQL, PostgreSQL, SQL Server, BigQuery, DBeaver, etc.) e complete o código.
 3. **Validação**: Compare o seu resultado com o arquivo `solucao.sql`.
-
+4. **Você pode também acessar o editor online:** Abra o [SQLiteOnline.com](https://sqliteonline.com/).
+    
 ---
 
 ## 🧠 Destaques Conceituais deste Episódio
